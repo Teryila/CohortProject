@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>{{ student.student }}'s Performance Record</h1>
+        <table border="1">
+            <tr>
+                <th>Course</th>
+                <th>Score</th>
+            </tr>
+            {% for course, score in student.courses.items() %}
+            <tr>
+                <td>{{ course }}</td>
+                <td>{{ score }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p>Average: {{ student.average }}</p>
+        <p>Overall Grade: {{ student.overall_grade }}</p>
+        <p>Exam Status: {{ student.exam_status }}</p>
+        <br>
+        <a href="/results">Back to All Results</a>
+        <br>
+        <a href="/">Enter New Student Data</a>
+    </body>
+</html>

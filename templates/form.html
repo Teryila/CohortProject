@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>Enter Student Data</h1>
+        <form action="/submit" method="post">
+            <label for="student_name">Student Name:</label><br>
+            <input type="text" id="student_name" name="student_name" required><br>
+            <label for="course">Course:</label><br>
+            <input type="text" id="course" name="course" required><br>
+            <label for="exam_score">Exam Score:</label><br>
+            <input type="number" id="exam_score" name="exam_score" step="0.01" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <a href="/results">View All Results</a>
+    </body>
+</html>
