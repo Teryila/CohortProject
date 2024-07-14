@@ -10,19 +10,19 @@
                 <th>Overall Grade</th>
                 <th>Exam Status</th>
             </tr>
-            {% for result in results %}
+            for result in results
             <tr>
-                <td>{{ result.student }}</td>
+                <td>result.student</td>
                 <td>
-                    {% for course, score in result.courses.items() %}
-                    {{ course }}: {{ score }}<br>
-                    {% endfor %}
+                    for course, score in result.courses.items()
+                    course :  score<br>
+                    endfor
                 </td>
-                <td>{{ result.average }}</td>
-                <td>{{ result.overall_grade }}</td>
-                <td>{{ result.exam_status }}</td>
+                <td>result.average</td>
+                <td>result.overall_grade</td>
+                <td>result.exam_status</td>
             </tr>
-            {% endfor %}
+            endfor
         </table>
         <br>
         <a href="/">Enter New Student Data</a>
